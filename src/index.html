@@ -1,19 +1,33 @@
+
+<!-- Enter your HTML code here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>News Aggregator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator App</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
+
 <body>
-  <h1 class="site-title">News Aggregator</h1>
+ 
+            <div class="mainheading">NEWS AGGREGATOR APP</div>  
+           
+            
   
-  <div class="search-container">
-    <input type="text" name="search" id="search" placeholder="Type and press enter to search..." />
-  </div>
-
-  <ul id="news-articles">
-
-  </ul>
+    <!-- Search Bar  -->
+    <div class="search-bar">
+      <input type="text" name="search" id="search" 
+      placeholder="Type and press enter to search..."/>
+    </div>
+    <!-- News Display Area -->
+            <ul id="news-articles" class="wow pulse"></ul>
+                  
+      <script src="scripts/index.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+        </script>
 </body>
 </html>
