@@ -175,7 +175,7 @@
   
   .article-description {
     font-size: 25px;
-    color: var(--font-color);
+    color: green;
     background: none;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -189,7 +189,7 @@
     background: none;
     font-size: 25px;
     font-family: Trebuchet MS;
-    color: var(--author-color);
+    color:  blueviolet;
     display: block;
     text-align: right;
   }
@@ -200,7 +200,7 @@
   }
   
   .not-found {
-    color: var(--font-color);
+    color: pink;
     font-family: sans-serif;
     font-size: 35px;
     margin-left: 25px;
@@ -208,7 +208,7 @@
   }
   
   .load {
-    color: var(--font-color);
+    color: blue;
     font-family: sans-serif;
     font-size: 35px;
     margin-left: 25px;
@@ -237,7 +237,7 @@
     #search {
       width: 55%;
       height: 20px;
-      background-color: var(--background-body-color);
+      background-color:white
       margin-left: 2%;
       padding: 20px;
       font-size: 20px;
@@ -251,7 +251,7 @@
       border: rgb(0, 0, 0) 10px solid;
       height: 550px;
       padding: 35px;
-      background-color: var(--box-color);
+      background-color: gray;
       margin-bottom: 20px;
       border-radius: 18px;
       padding-right: 30px;
@@ -267,7 +267,7 @@
           flex-wrap: wrap;
     }
     .not-found {
-      color: var(--font-color);
+      color: pink;
       font-family: sans-serif;
       font-size: 25px;
       margin-left: -20px;
@@ -287,7 +287,7 @@
     .img_area {
       width: 265px;
       height: 250px;
-      background-color: var(--img-background);
+      background-color: black;
     }
     .article-img {
       margin-top: 20px;
