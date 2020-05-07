@@ -1,6 +1,25 @@
 //Api-Key//
+
+// Lite Mode/Dark Mode Toggle Function//
+document.querySelector("#toggle_action").addEventListener('change',toggle_func)
+
+function toggle_func(e){
+  if (e.target.checked)
+   {
+    document.documentElement.setAttribute('data-theme', 'lite');
+    document.querySelector(".toggletxt").innerHTML="Toggle to Dark Mode";
+    }
+else
+   {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.querySelector(".toggletxt").innerHTML="Toggle to Lite Mode";
+   }   
+}
+
+//Api-Key//
 const apikey="aaa5a4c5e9824353856e9c3df99d8964";
 var article_area=document.getElementById("news-articles");
+//Function to have formatted NEWS//
 function getNews(news){
   let output="";
   if(news.totalResults>0){
@@ -23,7 +42,7 @@ function getNews(news){
   }
   else
   { 
-    article_area.innerHTML='<li class="not-found">No article was found ????</li>';
+    article_area.innerHTML='<li class="not-found">No article was found based on the search.</li>';
   }
 };
 // Function to retreive news using Fetch API with Await//
@@ -44,7 +63,7 @@ async function retreive(searchValueText=""){
 }
 //Get text value from Searchbar and pass to retreive function//
 async function searchvalue(e){  
-    if (event.key === "Enter")
+    if (event.which === 13 || event.keyCode === 13 || event.key === "Enter")
      {
       retreive(e.target.value);
      }
@@ -58,3 +77,4 @@ function start(){
 (function(){
   start();}
 )();
+
